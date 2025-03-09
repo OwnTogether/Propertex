@@ -7,7 +7,7 @@ const properties = [
     location: "Los Angeles, CA",
     price: "$1,200,000",
     roi: "8% per year",
-    image: "https://source.unsplash.com/400x300/?luxury,villa"
+    image: "https://th.bing.com/th/id/OIP.erj1ySHXCQoJsAMb-XM7OQHaE8?w=294&h=196&c=7&r=0&o=5&pid=1.7"
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const properties = [
     location: "New York, NY",
     price: "$850,000",
     roi: "6% per year",
-    image: "https://source.unsplash.com/400x300/?apartment,city"
+    image: "https://th.bing.com/th/id/OIP.Ai8KXN7Tfcv2Hc_34JRVgwHaEK?w=286&h=180&c=7&r=0&o=5&pid=1.7"
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const properties = [
     location: "Miami, FL",
     price: "$950,000",
     roi: "7.5% per year",
-    image: "https://source.unsplash.com/400x300/?beach,house"
+    image: "https://th.bing.com/th/id/OIP.l5emFojeRVOT6BzR68YKcgHaE7?w=298&h=199&c=7&r=0&o=5&pid=1.7"
   }
 ]
 

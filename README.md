@@ -1,50 +1,128 @@
-# React + TypeScript + Vite
+Real Estate Investment Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application that allows users to invest in pre-listed properties across India. The platform provides real-time investment tracking, portfolio insights, and stock market data integration to help users make informed investment decisions.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Investment Dashboard – Displays portfolio overview, holdings, and recent transactions.
 
-## Expanding the ESLint configuration
+Real-Time Stock Data – Fetches live stock prices for investment tracking.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Secure Transactions – Planned integration with Firebase authentication.
 
-- Configure the top-level `parserOptions` property like this:
+Scalable Backend – Built with Node.js, Express.js, and MongoDB.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Future Enhancements – Real-time chat and updates using Socket.io.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+🛠 Technologies Used
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Frontend:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+React.js (Vite, TypeScript)
+
+Tailwind CSS & ShadCN-UI
+
+Backend:
+
+Node.js, Express.js
+
+MongoDB, Mongoose
+
+Stock Market API (e.g., Alpha Vantage, Yahoo Finance)
+
+Firebase (for authentication & transactions) (Planned)
+
+Socket.io (Future Feature)
+
+
+
+🔧 Setup & Installation
+
+1️⃣ Clone the Repository
+
+git clone https://github.com/OwnTogether/Propertex.git
+cd investment-platform
+
+2️⃣ Install Dependencies
+
+Frontend
+
+cd frontend
+npm install
+
+Backend
+
+cd backend
+npm install
+
+3️⃣ Setup Environment Variables
+
+Create a .env file in the backend directory and add:
+
+MONGO_URI=mongodb+srv://your-username:your-password@cluster0.mongodb.net/
+CLIENT_URL=http://localhost:5173
+
+4️⃣ Run the Development Server
+
+Backend
+
+cd backend
+npm run dev
+
+Frontend
+
+cd frontend
+npm run dev
+
+🛤 API Endpoints
+
+Endpoint
+
+Method
+
+Description
+
+/api/investments
+
+GET
+
+Get all investments
+
+/api/investments/:id
+
+GET
+
+Get investment by ID
+
+/api/investments
+
+POST
+
+Create a new investment
+
+/api/stocks
+
+GET
+
+Fetch real-time stock data
+
+🏆 Challenges We Faced
+
+Live Stock Data Integration – Selecting the best API for Indian land investments.
+
+Database Structuring – Ensuring efficient storage of investment transactions.
+
+Scalability Considerations – Planning real-time updates and authentication.
+
+📌 Future Improvements
+
+🔹 Implement Firebase authentication & secure transactions.
+
+🔹 Add real-time investment notifications via Socket.io.
+
+🔹 Expand stock tracking to multiple asset classes.
+
+🤝 Contribution
+
+Feel free to contribute to this project! Fork the repo, make changes, and submit a PR. 🚀
+
