@@ -1,128 +1,75 @@
-Real Estate Investment Platform
+# 🏡 Propertex - Real Estate Investment Platform
 
-A full-stack web application that allows users to invest in pre-listed properties across India. The platform provides real-time investment tracking, portfolio insights, and stock market data integration to help users make informed investment decisions.
+Propertex is a real estate investment platform that allows users to invest in pre-listed properties. It provides real-time stock tracking for land investments in India, offering a seamless experience for investors.
 
-🚀 Features
+## 🚀 Features
+- 📊 **Investment Dashboard** – Track investments, portfolio, and real-time market data
+- 🏠 **Pre-Listed Properties** – Users can invest in curated real estate assets
+- 📈 **Live Stock Data** – Fetches real-time land prices using market APIs
+- 🔐 **Secure Transactions** – (Planned) Firebase authentication & Google APIs for safe transactions
+- 💬 **Real-Time Updates & Chat** – (Future) Socket.io integration for seamless communication
 
-Investment Dashboard – Displays portfolio overview, holdings, and recent transactions.
+## 🛠 Technologies Used
+- **Frontend:** React.js, Vite, TypeScript, Tailwind CSS, ShadCN-UI
+- **Backend:** Node.js, Express.js, MongoDB (Mongoose)
+- **Live Data:** Stock Market API (Alpha Vantage, Yahoo Finance, IEX Cloud)
+- **Security:** Helmet.js, CORS, Morgan, Cookie-parser
+- **Authentication & Payments:** (Future) Firebase Authentication, Google APIs
+- **Real-Time:** (Future) Socket.io for chat and updates
 
-Real-Time Stock Data – Fetches live stock prices for investment tracking.
+## 📂 Folder Structure
+```
+📂 propertex-backend/
+┣ 📂 config/          # Database configuration
+┃┣ 📜 db.js
+┣ 📂 controllers/     # API logic and business rules
+┃┣ 📜 investmentController.js
+┣ 📂 models/          # Mongoose Schemas
+┃┣ 📜 User.js
+┃┣ 📜 Investment.js
+┃┣ 📜 Property.js
+┃┣ 📜 Transaction.js
+┣ 📂 routes/          # API Endpoints
+┃┣ 📜 investmentRoutes.js
+┃┣ 📜 propertyRoutes.js
+┃┣ 📜 transactionRoutes.js
+┣ 📂 utils/           # Helper functions
+┃┣ 📜 generateToken.js
+┣ 📜 server.js        # Main entry point
+┣ 📜 .env             # Environment variables
+┣ 📜 package.json     # Dependencies & scripts
+```
 
-Secure Transactions – Planned integration with Firebase authentication.
+## ⚙️ Setup Instructions
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/OwnTogether/Propertex.git
+   cd propertex-backend
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Configure environment variables:
+   - Create a `.env` file in the root directory and add:
+4. Start the backend server:
+   ```sh
+   npm run dev
+   ```
 
-Scalable Backend – Built with Node.js, Express.js, and MongoDB.
+## 🚧 Challenges Faced
+- Initial difficulties in setting up MongoDB connections
+- Handling real-time stock data updates
+- Structuring the backend efficiently
 
-Future Enhancements – Real-time chat and updates using Socket.io.
+## 📌 Future Enhancements
+- 🔑 Implement Firebase authentication
+- 💳 Secure transaction processing
+- 💬 Add real-time chat & notifications
+- 📊 Enhance data visualization with advanced charts
 
-🛠 Technologies Used
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Frontend:
-
-React.js (Vite, TypeScript)
-
-Tailwind CSS & ShadCN-UI
-
-Backend:
-
-Node.js, Express.js
-
-MongoDB, Mongoose
-
-Stock Market API (e.g., Alpha Vantage, Yahoo Finance)
-
-Firebase (for authentication & transactions) (Planned)
-
-Socket.io (Future Feature)
-
-
-
-🔧 Setup & Installation
-
-1️⃣ Clone the Repository
-
-git clone https://github.com/OwnTogether/Propertex.git
-cd investment-platform
-
-2️⃣ Install Dependencies
-
-Frontend
-
-cd frontend
-npm install
-
-Backend
-
-cd backend
-npm install
-
-3️⃣ Setup Environment Variables
-
-Create a .env file in the backend directory and add:
-
-MONGO_URI=mongodb+srv://your-username:your-password@cluster0.mongodb.net/
-CLIENT_URL=http://localhost:5173
-
-4️⃣ Run the Development Server
-
-Backend
-
-cd backend
-npm run dev
-
-Frontend
-
-cd frontend
-npm run dev
-
-🛤 API Endpoints
-
-Endpoint
-
-Method
-
-Description
-
-/api/investments
-
-GET
-
-Get all investments
-
-/api/investments/:id
-
-GET
-
-Get investment by ID
-
-/api/investments
-
-POST
-
-Create a new investment
-
-/api/stocks
-
-GET
-
-Fetch real-time stock data
-
-🏆 Challenges We Faced
-
-Live Stock Data Integration – Selecting the best API for Indian land investments.
-
-Database Structuring – Ensuring efficient storage of investment transactions.
-
-Scalability Considerations – Planning real-time updates and authentication.
-
-📌 Future Improvements
-
-🔹 Implement Firebase authentication & secure transactions.
-
-🔹 Add real-time investment notifications via Socket.io.
-
-🔹 Expand stock tracking to multiple asset classes.
-
-🤝 Contribution
-
-Feel free to contribute to this project! Fork the repo, make changes, and submit a PR. 🚀
-
+---
+Made with ❤️ for the Hackathon 🚀
