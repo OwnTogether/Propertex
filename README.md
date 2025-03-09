@@ -68,8 +68,3 @@ Propertex is a real estate investment platform that allows users to invest in pr
 - 💬 Add real-time chat & notifications
 - 📊 Enhance data visualization with advanced charts
 
-## 📜 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-Made with ❤️ for the Hackathon 🚀
